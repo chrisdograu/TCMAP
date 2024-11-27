@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStore - Support</title>
+    <link rel="stylesheet" href="conf.css">
+    <link rel="stylesheet" href="su.css">
+</head>
+
+<body>
+    <header>
+        <div class="chris">
+            <p> Created by: Christian</p>
+            <hr>
+        </div>
+
+        <div class="etc">
+            <a href="begining.html">
+                <div class="logo">
+                    <img src="logo.png" alt="logo">
+                </div>
+            </a>
+            <a href="begining.html">
+                <div class="tema">
+                    <h1>GameStore</h1>
+                </div>
+            </a>
+            <div class="lemas">
+                <div class="lema">
+                    <p>the search for the best is over</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nasv">
+            
+            <a href="xobx.html">Xbox</a>
+            <a href="stationplays.html">Playstation</a>
+            <a href="cps.html">Pc</a>
+            <a href="bile.html">Mobile</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="buscar" id="divBusca">
+            <input type="text" id="txtBusca" placeholder="Search support..." />
+        </div>
+
+        <div class="papos">
+            <h1>Welcome to GameStore Support</h1>
+            <p>
+                If you're having trouble with games, settings, or need technical assistance, you're in the right place! Our team is here to help.
+            </p>
+            <p>
+                We offer specialized support to solve any doubts or technical issues related to games, consoles, and devices. Below are some of the most common issues and how we can assist.
+            </p>
+        </div>
+
+        <div class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>How can I resolve installation issues?</h3>
+                <p>To resolve installation issues, make sure your device meets the minimum requirements for the game. If the error persists, try reinstalling the game or contact technical support.</p>
+            </div>
+            <div class="faq-item">
+                <h3>My game is crashing, what should I do?</h3>
+                <p>If your game is crashing, try closing other programs that may be consuming too many resources. Also, check if there are any updates available for the game or your operating system.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Where can I find configuration guides?</h3>
+                <p>We provide detailed configuration guides for all devices in our support section. You can consult the guides online or download the PDFs directly from our website.</p>
+            </div>
+        </div>
+
+        <div class="contato">
+            <h2>Contact Us</h2>
+            <p>If your question wasn't answered here, contact our technical support team.</p>
+            <p><strong>Support Email:</strong> suporte@gamestore.com</p>
+        </div>
+    </main>
+
+    <footer>
+        <hr>
+        <div class="reto">
+            <div class="contaF">
+                <p>contact: suporte@gamestore.com</p>
+            </div>
+
+            <div class="game">
+                <h1>GameStore</h1>
+            </div>
+
+            <div class="logos">
+                <img src="insta.png" alt="Instagram">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let index = 0;
+
+        function moveSlide(step) {
+            const slides = document.querySelectorAll('.carousel-item');
+            const totalSlides = slides.length;
+
+            index += step;
+
+            if (index < 0) index = totalSlides - 1;
+            if (index >= totalSlides) index = 0;
+
+            const newTransform = -index * 100;
+            document.querySelector('.carousel-images').style.transform = `translateX(${newTransform}%)`;
+        }
+
+        setInterval(() => {
+            moveSlide(1);
+        }, 5000);
+    </script>
+
+</body>
+</html>
